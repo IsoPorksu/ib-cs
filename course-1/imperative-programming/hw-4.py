@@ -1,7 +1,7 @@
 total = int(input("Enter the total: "))
 action = ''
-if total > 17:
-    action = 'hit'
-    if total > 22: action = 'stay'
-else: action = 'bust'
+if total > 18:
+    action = 'stay'
+    if total > 21: action = 'bust'
+else: action = 'hit'
 print(action)
