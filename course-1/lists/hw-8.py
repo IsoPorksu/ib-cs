@@ -1,15 +1,10 @@
-word = ""
 words = []
-while word != "!":
-    word = input("Please enter a word: ")
+while (word := input("Please enter a word: ")) != "!":
     words.append(word)
-words.remove("!")
-index = 0
 indices = []; words_new = words.copy()
 print("Second stage")
-while index >= 0:
-    index = int(input("Please enter an index: "))
-    if 0 <= index < len(words)+1:
+while (index := int(input("Please enter an index: "))) >= 0:
+    if 0 <= index < len(words):
         indices.append(index)
         words_new.remove(words[index])
 print("The original list of words is:", words)

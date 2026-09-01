@@ -1,10 +1,5 @@
-word = ""
 lst = []
-while word != "!":
-    word = input("Please enter a word: ")
-    lst.append(word)
-word = ""
+while (word := input("Please enter a word: ")) != "!": lst.append(word)
 print("Second stage")
-while word != "!":
-    word = input("Please enter a word: ")
-    if word in lst and word != "!": print("hit")
+while (word := input("Please enter a word: ")) != "!":
+    if word in lst: print("hit")
