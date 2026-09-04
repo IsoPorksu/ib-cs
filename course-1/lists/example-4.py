@@ -1,5 +1,1 @@
-from random import *
-n = 12
-lst = sample(list(range(1, 100)), n)
-diff = [x[1] - x[0] for x in zip(lst, lst[1:])]
-print(diff)
+from random import *; n = 12; lst = sample(list(range(1, 100)), n); diff = [x[1] - x[0] for x in zip(lst, lst[1:])]; print(diff)
