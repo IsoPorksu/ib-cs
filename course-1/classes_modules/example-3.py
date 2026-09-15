@@ -4,7 +4,7 @@ def find_all(s, sub):
         found_index = s.find(sub, start_index)
         if found_index == -1: return indices
         indices.append(found_index)
-        start_index = found_index + len(sub)
+        start_index = found_index + 1
 
 s = "ababab"
 print(find_all(s, "aba"))
