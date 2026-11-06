@@ -10,7 +10,7 @@ file_path = pathlib.Path('course-2/persistent-storage/data') / 'random_ints.txt'
 try:
     if file_path.exists():
         f = open(file_path, 'r')
-        read_lst = pickle.load(f)
+        read_lst = [int(line) for line in f.read().splitlines()]
         f.close()
         print(read_lst)
     else:
