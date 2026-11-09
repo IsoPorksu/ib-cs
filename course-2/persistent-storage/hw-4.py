@@ -7,7 +7,7 @@ def filter_file(filename_in, filename_out, cond):
                 try:
                     if cond(line):
                         output.append(line)
-                except Exception: print("exc")
+                except Exception: pass
             for line in output:
                 print(line, file=f2)
 
